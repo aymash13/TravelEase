@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+.login-container {
+    margin: 0 auto;
+    text-align: center;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 550;
+    margin-bottom: 20px;
+    
+}
+
+.login-box {
+    margin-top: 5rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+button {
+    width: 98%;
+    padding: 15px;
+    background: #ff7eb3;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff3d81;
+}
