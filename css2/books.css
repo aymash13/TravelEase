@@ -1,0 +1,229 @@
+
+#booking-container {
+    width: 50%;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#booking-container {
+    margin-top: 5rem;
+}
+
+.booking-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+
+.package-summary {
+    background: linear-gradient(135deg, #e3f2fd, #d4eaff);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.package-summary p {
+    margin: 10px 0;
+}
+
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #004aad;
+    box-shadow: 0px 0px 8px rgba(0, 74, 173, 0.3);
+    outline: none;
+}
+
+
+#total-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    background: #fff3cd;
+    border-radius: 8px;
+    color: #d9534f;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-book {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-book:hover {
+    background: linear-gradient(135deg, #1e7e34, #146c2e);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #booking-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .booking-title {
+        font-size: 22px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-book {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+
+#booking-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 5rem auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.booking-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+
+#booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#booking-table th, #booking-table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#booking-table th {
+    background: #004aad;
+    color: #fff;
+    font-size: 16px;
+}
+
+.booking-row:hover {
+    background: #f1f1f1;
+    transition: 0.3s;
+}
+
+.status {
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.status.pending { background: #ffeb99; color: #d68c00; }
+.status.confirmed { background: #c6f6d5; color: #2d8a50; }
+.status.cancelled { background: #f6c6c6; color: #a94442; }
+.status.completed { background: #c6daf6; color: #2b69c7; }
+
+
+.cancel-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #cc0000;
+}
+
+
+.disabled-btn {
+    background: #ccc;
+    color: #666;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: not-allowed;
+}
+
+
+#no-bookings {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #booking-section {
+        width: 95%;
+    }
+
+    #booking-table th, #booking-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

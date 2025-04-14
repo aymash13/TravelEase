@@ -1,0 +1,140 @@
+
+#travel-packages-section {
+    text-align: center;
+    padding: 40px 15px;
+    background: #f9f9f9;
+}
+
+
+#packages-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+#packages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    padding: 12px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.package-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    min-height: 450px; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left; /* Align text to the left */
+}
+
+
+.package-img {
+    width: 100%;
+    height: 180px; /* Increased height */
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.package-item:hover .package-img {
+    transform: scale(1.02);
+}
+
+
+.package-name {
+    font-size: 1.2rem;
+    color: #222;
+    margin: 10px 0 6px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+.package-location,
+.package-duration,
+.package-price {
+    font-size: 0.8rem;
+    color: #555;
+    margin: 4px 0;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+    margin-top: auto; 
+}
+
+
+.more-btn, .book-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.more-btn {
+    background: #444;
+    color: white;
+}
+
+.more-btn:hover {
+    background: #666;
+}
+
+.book-btn {
+    background: #007bff;
+    color: #fff;
+}
+
+.book-btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .package-item {
+        padding: 12px;
+        min-height: 420px; 
+    }
+
+    .package-img {
+        height: 160px;
+    }
+
+    .package-name {
+        font-size: 1.1rem;
+    }
+
+    .package-location,
+    .package-duration,
+    .package-price {
+        font-size: 0.75rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .more-btn, .book-btn {
+        font-size: 0.8rem;
+    }
+}
