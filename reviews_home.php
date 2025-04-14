@@ -38,7 +38,7 @@ $connect = new PDO("mysql:host=localhost;dbname=travel_agency", "root", "");
                 $.ajax({
                     url: "fetch_reviews.php",
                     method: "POST",
-                    data: { limit: 5 }, // Request only the latest 5 reviews
+                    data: { limit: 5 },
                     success: function (data) {
                         $("#reviewList").html(data);
                     }

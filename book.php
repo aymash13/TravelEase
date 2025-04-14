@@ -3,11 +3,11 @@
 include 'config.php';
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php"); // Redirect to login if not logged in
+    header("Location: login.php");
     exit();
 }
 
-$user_id = $_SESSION['user_id']; // Get logged-in user's ID
+$user_id = $_SESSION['user_id']; 
 $user_name = $_SESSION['user_name'];
 $user_email = $_SESSION['user_email'];
 
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($insert_booking) {
         echo "<script>alert('Booking successful! Total Price: ₹$total_price'); window.location.href='bookings.php';</script>";
     } else {
-        die("Booking failed: " . mysqli_error($conn)); // Debugging message
+        die("Booking failed: " . mysqli_error($conn)); 
     }
 }
 ?>

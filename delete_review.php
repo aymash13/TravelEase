@@ -1,7 +1,6 @@
 <?php
 $connect = new PDO("mysql:host=localhost;dbname=travel_agency", "root", "");
 
-// Enable error mode for debugging
 $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 if(isset($_POST["id"])) {

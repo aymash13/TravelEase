@@ -49,12 +49,10 @@ session_start();
     <!-- Header End -->
 
     <script>
-        // Toggle user menu on clicking the user icon
         document.getElementById("user-icon").addEventListener("click", function () {
             document.getElementById("user-menu").classList.toggle("active");
         });
 
-        // Hide menu when clicking outside
         document.addEventListener("click", function (event) {
             const userMenu = document.getElementById("user-menu");
             const userIcon = document.getElementById("user-icon");

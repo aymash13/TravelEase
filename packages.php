@@ -1,15 +1,14 @@
 <?php
 include 'config.php';
 
-// Debugging: Check database connection
+
 if (!$conn) {
     die("Database connection failed: " . mysqli_connect_error());
 }
 
-// Fetch all travel packages
 $select_packages = mysqli_query($conn, "SELECT * FROM packages");
 
-// Debugging: Check if query is successful
+
 if (!$select_packages) {
     die("Query failed: " . mysqli_error($conn));
 }

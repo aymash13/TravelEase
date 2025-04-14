@@ -11,10 +11,9 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 try {
     if (isset($_GET['delete']) && isset($_GET['token']) && $_GET['token'] === $_SESSION['csrf_token']) {
-        $delete_id = intval($_GET['delete']); // Ensure valid integer ID
+        $delete_id = intval($_GET['delete']);
 
         if ($delete_id > 0) {
-            // Prevent self-deletion
             if ($delete_id == $_SESSION['admin_id']) {
                 $_SESSION['message'] = "You cannot delete your own account!";
                 header('Location: admin_users.php');
@@ -36,7 +35,6 @@ try {
     $_SESSION['message'] = "Error: " . $e->getMessage();
 }
 
-// ✅ Corrected Redirect
 header("Location: admin_user.php");
 exit();
 ?>
